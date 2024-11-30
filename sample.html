@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sanrio World</title>
+    
+    <!-- Embedded CSS -->
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif; 
+            background-color: #f9f9f9; 
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center; 
+            color: #e6007e; 
+            margin-bottom: 20px; 
+        }
+
+        /* Grouping selectors for paragraphs and content */
+        p, .content {
+            line-height: 1.5; 
+            color: #555; 
+            margin: 10px 0; 
+            padding: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            background-color: #fff; 
+        }
+
+        /* Container for layout */
+        .container {
+            width: 80%; 
+            margin: 0 auto; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            overflow: hidden; 
+        }
+
+        /* Floating blocks for character sections */
+        .character-info {
+            float: left; 
+            width: 45%; 
+            margin: 1%; 
+            background-color: #fff1f0; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Custom style for list items */
+        ul {
+            list-style-type: disc; 
+            padding-left: 20px; 
+        }
+
+        /* Pseudo-classes for link interactions */
+        a {
+            color: blue; 
+            text-decoration: none; 
+        }
+
+        a:hover {
+            text-decoration: underline; 
+            color: darkblue; 
+        }
+
+        /* Pseudo-elements for decorative styling */
+        .highlight::before {
+            content: "✨ "; 
+            font-size: 1.5em; 
+        }
+
+        /* Offset example */
+        .offset-example {
+            position: relative; 
+            top: 10px; 
+            left: 20px; 
+            padding: 15px; 
+            background-color: #fedcdb; 
+            border: 2px solid #ffd7d7; 
+            border-radius: 5px; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Sanrio World</h1>
+
+    <div class="container">
+        <div class="character-info">
+            <h2 class="highlight">Sanrio Characters</h2>
+            <p>Sanrio is home to a variety of cute characters, each with unique personalities. Some of the most popular include:</p>
+            <ul>
+                <li><span style="font-weight: bold;">Hello Kitty</span> - The iconic character known worldwide.</li>
+                <li><span style="font-weight: bold;">My Melody</span> - A sweet rabbit who loves to bake.</li>
+                <li><span style="font-weight: bold;">Cinnamoroll</span> - A puppy with big ears who can fly.</li>
+            </ul>
+        </div>
+
+        <div class="character-info" style="float: right;">
+            <h2 class="highlight">Merchandise</h2>
+            <p>Sanrio offers a wide range of products featuring their beloved characters, including:</p>
+            <ul>
+                <li><span style="font-weight: bold;">Plush Toys</span> - Soft and cuddly figures of your favorite characters.</li>
+                <li><span style="font-weight: bold;">Stationery</span> - Cute notebooks, pens, and more.</li>
+                <li><span style="font-weight: bold;">Apparel</span> - Clothing adorned with adorable designs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="offset-example">
+        <p>This element demonstrates the use of the offset property, showcasing how it can shift positioning visually.</p>
+    </div>
+</body>
+</html>
