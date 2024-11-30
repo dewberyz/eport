@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>my e-portfolio!</title>
+<link rel="stylesheet" href="q1.css">
+</head>
+<body>
+<section class="activities" id="activities">
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="item" style="background-image: url(https://tinyurl.com/4tbxn5v6);">
+                <div class="content">
+                    <div class="name">Volleyball Practice</div>
+                    <div class="des">This is my group (RBC) after our volleyball practice. This practice occured before our first match against BINI. Sadly, we lost.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            
+            <div class="item" style="background-image: url(https://tinyurl.com/33cp34p4);">
+                <div class="content">
+                    <div class="name">Activities of 9-Family</div>
+                    <div class="des">In this section, you will be able to see the activities that our section, 9-Family did.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/2wpsw4v2);">
+                <div class="content">
+                    <div class="name">Volleyball</div>
+                    <div class="des">We had volleyball for the 1st quarter in Physical Education. There were 3 groups: Group 1 White Blood Cells, Group 2 Bini, and Group 3 Red Blood Cells (my group!). The overall winner is group BINI (2-0). This photo was taken on the last day of our volleyball session.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/yd7n62vz);">
+                <div class="content">
+                    <div class="name">Extemporaneous Speech</div>
+                    <div class="des">We had our extemporaneous speech for English just recently. It was an unplanned speech and we will be given a topic that other sections wrote. It took 4 days for this to finish.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/yk3fvx9j);">
+                <div class="content">
+                    <div class="name">Inaugural Speech</div>
+                    <div class="des">Before extemporaneous speech, we had our inaugural speech. We were given a week to draft and practice our speech. We were grouped into 4 so that other members of the group can give feedback and suggestions to the speaker.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/3wxk2v27);">
+                <div class="content">
+                    <div class="name">Lipunang Sibil Making in ESP & A.P</div>
+                    <div class="des">This was a performance task for ESP and A.P. 'Lipunang Sibil' is the place outside the family, the state, and the economy where people interact to promote common aspirations or goals.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
