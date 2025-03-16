@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><title>Loop Examples</title>
+
+<script>
+  function loopExamples() {
+  let output = "";
+
+  // For loop: Prints numbers from 1 to 5
+  output += "For Loop: ";
+  for (let i = 1; i <= 5; i++) {
+  output += i + " ";
+  }
+  output += "<br>";
+
+  // While loop: Prints numbers from 1 to 5
+  output += "While Loop: ";
+  let j = 1;
+  while (j <= 5) {
+  output += j + " ";
+  j++;
+  }
+  output += "<br>";
+
+  // Do-while loop: Prints numbers from 1 to 5
+  output += "Do-While Loop: ";
+  let k = 1;
+  do {
+  output += k + " ";
+  k++;
+  } while (k <= 5);
+  output += "<br>";
+
+  // For-in loop: Prints the indices of an array
+  let array = ["A", "B", "C"];
+  output += "For-In Loop (Array Indices): ";
+  for (let index in array) {
+  output += index + " ";
+  }
+  output += "<br>";
+
+  // Break statement: Stops the loop when i equals 3
+  output += "Break Statement: ";
+  for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+  break;
+  }
+  output += i + " ";
+  }
+  output += "<br>";
+
+  // Continue statement: Skips printing when i equals 3
+  output += "Continue Statement: ";
+  for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+  continue;
+  }
+  output += i + " ";
+  }
+  output += "<br>";
+
+  document.getElementById("output").innerHTML = output;
+  }
+</script>
+</head>
+<body>
+
+<h2>Loop Examples in JavaScript</h2>
+<button onclick="loopExamples()">Run Loops</button>
+<p id="output"></p>
+
+</body>
+</html>

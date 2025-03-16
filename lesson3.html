@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><title>Switch Statement and Functions Example</title>
+<script>
+  // Function to perform a calculation based on the selected operation
+  function calculate(num1, num2, operation) {
+  let result;
+
+  switch (operation) {
+  case 'add':
+  result = num1 + num2;
+  break;
+  case 'subtract':
+  result = num1 - num2;
+  break;
+  case 'multiply':
+  result = num1 * num2;
+  break;
+  case 'divide':
+  if (num2 === 0) {
+  return "Cannot divide by zero.";
+  }
+  result = num1 / num2;
+  break;
+  default:
+  return "Invalid operation.";
+  }
+
+  return result;
+  }
+
+  // Function to display the result
+  function displayResult() {
+  let number1 = parseFloat(document.getElementById("num1").value);
+  let number2 = parseFloat(document.getElementById("num2").value);
+  let operation = document.getElementById("operation").value;
+
+  let output = calculate(number1, number2, operation);
+  document.getElementById("result").innerText = "Result: " + output;
+  }
+</script></head>
+<body>
+<h2>Switch Statement and Functions in JavaScript</h2>
+<label for="num1">Number 1:</label>
+<input type="number" id="num1"><br><br>
+<label for="num2">Number 2:</label>
+<input type="number" id="num2"><br><br>
+<label for="operation">Select Operation:</label>
+<select id="operation">
+<option value="add">Add</option>
+<option value="subtract">Subtract</option>
+<option value="multiply">Multiply</option>
+<option value="divide">Divide</option>
+</select><br><br>
+<button onclick="displayResult()">Calculate</button>
+<p id="result"></p>
+</body>
+</html>

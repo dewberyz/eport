@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>my e-portfolio!</title>
+<link rel="stylesheet" href="q4.css">
+</head>
+<body>
+
+<section class="home" id="home">
+<div class="circle"></div>
+<header>
+<a href="#"><img src="C:\Users\acer\Downloads\logo (1).jpg" class="logo"></a>
+<ul>
+<li><a href="dewberyz.html">Home</a></li>
+<li><a href="q1.html">First Quarter</a></li>
+<li><a href="q2.html">Second Quarter</a></li>
+<li><a href="q3.html">Third Quarter</a></li>
+<li><a href="q4.html">Fourth Quarter</a></li>
+</ul>
+</header>
+</section>
+
+<section class="activities" id="activities">
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="item" style="background-image: url(https://tinyurl.com/2eaxbbuk);">
+                <div class="content">
+                    <div class="name">One Act Play</div>
+                    <div class="des">This is a photo of me and the other salon girls with the main actor Pia Almazan playing sa Annie Wilks.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            
+            <div class="item" style="background-image: url(https://tinyurl.com/292ykap3);">
+                <div class="content">
+                    <div class="name">Activities of 9-Family</div>
+                    <div class="des">In this section, you will be able to see the activities that our section, 9-Family, did during the 4th quarter of school year 2024-2025.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/vy5nyypz);">
+                <div class="content">
+                    <div class="name">Streetdance Competition</div>
+                    <div class="des">Family and Faith collabed for the streetdance competition. After weeks of bruises and tiredness, we won 1st runner up!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/yc3rthe4);">
+                <div class="content">
+                    <div class="name">Miting de Avance</div>
+                    <div class="des">This is a photo of Sharpay Layug who ran for Grade 10 Level Representative. She stood there confidently and won the officer role.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/3r3uep8w);">
+                <div class="content">
+                    <div class="name">Battle of the Bands</div>
+                    <div class="des">BOTB was so fun! So many talented bands performed to showcase their potential. My favorite band, Singkwenta, won!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+    </div>
+
+</section>
+<script>
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+let items = document.querySelectorAll('.item')
+document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})
+</script>
+
+<section class="lessons" id="lessons">
+<div class="content2">
+<div class="textBox2">
+<h2>Lessons in<br><span>4th Quarter</span></h2>
+</div>
+<div class="lesson">
+
+<ol>
+<li><b>Javascript Events</b></li>
+<ul>
+<li>What’re Events? - These are actions that are triggered either by mouse click, function calls, keyboard strokes, etc.</li>
+<li>Describes how HTML elements are to be displayed on media</li>
+<li>Functions: Remains a block of text unless it’s called by an event handler.</li>
+<li>Event Handlers: You can respond to an event on your page using these.</li>
+<li>Popup Boxes: Windows that pop out of the screen, useful in warning the user, gathering input, or verification.</li>
+<li><a href="lesson1.html">browser sample</a></li>
+</ul><br>
+
+<li><b>Conditions, Controls, and Loops</b></li>
+<ul>
+<li>Conditional Statements: perform different actions for different decisions.
+If Else If Statement: refers to an if statement depending on another if statement.</li>
+<li>If Statement: used to check or verify a condition & is executed ONLY if the condition is true <br>(Should be referred as a statement, not a function.)
+This construct evaluates a condition to True or False, then runs a specific code depending on the result.</li>
+<li>Nested If Statement: If statement w/ another if statement (parent and child); <br>used when “child” condition is only checked when the parent condition is true.</li>
+<li>If-Else Statement: similar to if statement, but we are given an alternative instruction when the argument is NOT true.</li>
+<li>If Else If Statement: refers to an if statement depending on another if statement.</li>
+<li><a href="lesson2.html">browser sample</a></li>
+</ul><br>
+
+<li><b>Conditions, Controls, and Loops</b></li>
+<ul>
+<li>Switch Statement: used when a condition may have multiple results &<br> a different set of operation is done based on each result or input.</li>
+<li>Functions: a self-contained piece of code that performs a particular “function” when  called.</li>
+<li>Argument: When functions are defined using “function,” followed by its name and the open & close<br> parentheses; provides additional information needed by the function to process. 
+</li>
+<li>Return Statement: For when a function requires specifying a resulting output (ex: computation); functions that give out a value must use this</li>
+<li><a href="lesson3.html">browser sample</a></li>
+</ul><br>
+
+<li><b>Loops</b></li>
+<ul>
+<li>The for loop is used when you know how many times the block of code must be iterated</li>
+<li>The while loop is used if you know when the condition will be met.<br> It will loop through the set of codes until the condition is met.</li>
+<li>Do-while loops work like the while loop except that the code will be executed once and is repeated as<br> long as the set condition is true, but will stop once the condition is false.</li>
+<li>For-in loop through the elements of an array or an object.</li>
+<li>The break statement will stop or break the loop once the specified condition becomes true and<br> then execute the nextcode if any after the loop.</li>
+<li>The continue statement will stop or break the loop for a setvalue then continue to<br> loop with the nest value.
+</li>
+<li><a href="lesson4.html">browser sample</a></li>
+</ul><br>
+
+</ol>
+</div>
+</section>
+
+<section id="reflection">
+
+
+<div class="content3">
+<div class="textBox3">
+<h2>Reflection</h2>
+<p>This quarter's JavaScript lessons were a big step up for me. I learned about events, which make websites interactive by responding to clicks and other actions. I also got the hang of conditional statements and functions, which help control how code runs and make it easier to reuse.<br><br>
+
+At first, it was tough, but with practice, I got better at using these tools in my projects. I can now make web pages that react to what users do and write code that's more organized and efficient.<br><br>
+
+Overall, it was a great learning experience, and I'm excited to keep improving my skills. These lessons have given me a solid foundation for building more complex and engaging web applications in the future.<br><br>
+
+</p>
+
+</html>
